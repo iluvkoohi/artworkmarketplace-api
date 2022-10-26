@@ -5,7 +5,7 @@ const Cart = require("../models/cart");
 const Art = require("../models/art");
 
 router.post("/cart", isAuthenticated, async (req, res) => {
-    const _id = req.body.id;
+    const _id = req.body._id;
     const art = await Art.findById(_id);
 
     if (!art) return res
