@@ -88,6 +88,11 @@ const updateProfileVerificationStatus = async (req, res) => {
 
         const transporter = nodemailer.createTransport({
             service: 'gmail',
+            host: 'smtp.gmail.com',
+            port: 465,
+            ignoreTLS: false,
+            secure: false,
+            auth: {
             auth: {
                 user: 'artwork.marketplace.ph@gmail.com',
                 pass: 'krkjrwbnvhwazfyw'
