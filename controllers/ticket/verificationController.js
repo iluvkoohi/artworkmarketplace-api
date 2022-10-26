@@ -93,7 +93,6 @@ const updateProfileVerificationStatus = async (req, res) => {
             ignoreTLS: false,
             secure: false,
             auth: {
-            auth: {
                 user: 'artwork.marketplace.ph@gmail.com',
                 pass: 'krkjrwbnvhwazfyw'
             }
